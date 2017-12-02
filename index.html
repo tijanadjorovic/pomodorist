@@ -1,56 +1,39 @@
 <!doctype html>
 <html lang="en">
-  <head>
+
+<head>
     <title>Pomodoro timer</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Rouge+Script" rel="stylesheet">
     <link href="css/Pomodorist.css" type="text/css" rel="stylesheet">
-  </head>
-  <body>
-    <h1>Pomodoro timer</h1>
-     
-      <div>
-          <p><span id="mytimer">25:00</span></p>
+</head>
 
-          <button id="start" onclick="start()">Start</button>
-          <button id="stop" onclick="stop()">Stop</button>
-          <button id="reset" onclick="reset()">Reset</button>
-      </div>
-      
-      <div>
-          <p><span id="timer05">05:00</span></p>
-
-          <button id="start05" onclick="start05()">Start</button>
-          <button id="stop05" onclick="stop05()">Stop</button>
-          <button id="reset05" onclick="reset05()">Reset</button>
-      </div>
-      
-    
-      
-     
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
+<body>
+    <div id="divcover">
+        <h1>Pomodoro timer</h1>
+        <div div="divtimer">
+            <p class="p1">Timer <span id="mytimer">25:00</span></p>
+            <button class="button" id="start" onclick="start()">Start</button>
+            <button class="button" id="stop" onclick="stop()">Stop</button>
+            <button class="button" id="reset" onclick="reset()">Reset</button>
+        </div>
+        <div div="divbreak">
+            <p class="p2">Break <span id="timer05">05:00</span></p>
+            <button class="button" id="start05" onclick="start05()">Start</button>
+            <button class="button" id="stop05" onclick="stop05()">Stop</button>
+            <button class="button" id="reset05" onclick="reset05()">Reset</button>
+        </div>
+    </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
     <script src="js/Pomodorist.js"></script>
-  </body>
+</body>
+
 </html>
